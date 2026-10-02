@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 scripts/graph_audit.py *)",
+      "Bash(python3 scripts/csv_summary.py *)",
+      "Bash(python3 scripts/margin.py *)"
+    ],
+    "ask": [
+      "mcp__hub__apply_change"
+    ]
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$CLAUDE_PROJECT_DIR/scripts/graph_audit.py\" --hook"
+          }
+        ]
+      }
+    ]
+  }
+}
