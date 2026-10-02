@@ -104,4 +104,8 @@ addresses where you can. What you send to the model is governed by your Claude p
 Edit `CLAUDE.md` for how the assistant should behave, add skills under `.claude/skills/`, and put
 your own reference material in `knowledge/`. Keep every new note linked from an `_index.md`.
 
+## License
+
+MIT - see [LICENSE](LICENSE). Use it, change it, build on it.
+
 Map of this workspace: [`_index.md`](_index.md).
